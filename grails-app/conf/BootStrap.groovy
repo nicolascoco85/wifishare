@@ -12,6 +12,24 @@ class BootStrap {
 	 new Componente("Mem DRR2","Kingtone", "Malasia", "Garantia de por Vida" ).save(failOnError:true)
 	 new Componente("M3A-Pro", "Asus", "China", "Lider en tecnologia" ).save(failOnError:true)
 
+	 new Mother("775", "DDR2", "2", "PCI Express","PCI", "PCI").save(failOnError:true) 
+	 new Mother("AM2+", "DDR3", "3", "AGP","PCI", "PCI").save(failOnError:true) 
+	 new Mother("AM2+", "DDR3", "2", "PCI Express","PCI", "PCI").save(failOnError:true) 
+
+	 new Memoria("2GB", "1600","DDR2").save(failOnError:true) 
+	 new Memoria("4GB", "1800","DDR3").save(failOnError:true)
+	 new Memoria("1GB", "1200","DDR400").save(failOnError:true)
+
+	 new Procesador ("2.3 Ghz", "x64","Core Duo","775").save(failOnError:true)
+	 new Procesador ("1.7 Ghz", "x86","Sempron","AM2+").save(failOnError:true)
+	 new Procesador ("3.0 Ghz", "x64","Pentium 4","775").save(failOnError:true)
+
+	 new Placa ("PCI","10-100Mb/s", "Red").save(failOnError:true)
+	 new Placa ("PCI Express","", "Video").save(failOnError:true)
+	 new Placa ("PCI","44000hz", "audio").save(failOnError:true)
+
+
+
 
     }
     def destroy = {
