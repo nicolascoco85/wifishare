@@ -2,10 +2,11 @@ package seminario
 
 class MemoriaController {
 
-    def index() { 
+	static scaffold = true
+    /*def index() { 
 
     	render "Memorias"
-    }
+    }*/
 
     def compatible (Mother mother){
 
