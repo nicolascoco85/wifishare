@@ -25,7 +25,7 @@ class BootStrap {
 	 new Procesador ("3.0 Ghz", "x64","Pentium 4","775").save(failOnError:true)
 
 	 new Placa ("PCI","10-100Mb/s", "Red").save(failOnError:true)
-	 new Placa ("PCI Express","", "Video").save(failOnError:true)
+	 new Placa ("PCI Express","30Gb/s", "Video").save(failOnError:true)
 	 new Placa ("PCI","44000hz", "audio").save(failOnError:true)
 
 
