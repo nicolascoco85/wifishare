@@ -9,4 +9,13 @@ class Procesador extends Componente{
 
     static constraints = {
     }
+
+    Procesador (String velocidad,String arquitectura,String tipo,String socket){
+
+    	this.velocidad= velocidad
+    	this.arquitectura= arquitectura
+    	this.tipo= tipo
+    	this.socket = socket
+    
+    }
 }

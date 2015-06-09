@@ -9,4 +9,11 @@ class Memoria extends Componente{
 
     static constraints = {
     }
+
+    Memoria (String capacidad, 	String velocidad, String tipo_slot ){
+
+    	this.capacidad= capacidad
+    	this.velocidad= velocidad
+    	this.tipo_slot= tipo_slot
+    }
 }

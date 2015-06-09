@@ -10,6 +10,18 @@ class Mother extends Componente{
 	String extension_audio//pci
 
     static constraints = {
+     }
+
+     Mother(String socket, String tipo, String cant, 
+    	String ext_video, String ext_red, String ext_audio) {
+
+     	this.socket = socket
+     	this.tipo_slot_memoria = tipo
+     	this.cantidad_de_slot_memoria = cant
+     	this.extension_video = ext_video
+     	this.extension_audio = ext_audio
+     	this.extension_red = ext_red
+
     }
 
 }

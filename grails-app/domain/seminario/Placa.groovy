@@ -8,4 +8,11 @@ class Placa extends Componente{
 	
     static constraints = {
     }
+
+    Placa (String ext_conector,String velocidad,String tipo_de_placa ){
+
+    	this.extension_conector= ext_conector
+    	this.velocidad= velocidad
+    	this.tipo_de_placa = tipo_de_placa
+    }
 }
