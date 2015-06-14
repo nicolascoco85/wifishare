@@ -1,8 +1,9 @@
 package seminario
 
 class PlacaController {
+	static scaffold = true
 
-    def index() { 
+   def index() { 
     	render "Placa"
     }
 

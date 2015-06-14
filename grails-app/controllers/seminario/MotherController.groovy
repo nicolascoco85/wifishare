@@ -3,7 +3,7 @@ package seminario
 class MotherController {
 static scaffold = true
 
-   /* def index() { 
+    /*def index() { 
 
     	render "Mother"
     }*/

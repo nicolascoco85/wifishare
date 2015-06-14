@@ -1,6 +1,7 @@
 package seminario
 
 class ProcesadorController {
+	static scaffold = true
 
     def index() { 
 

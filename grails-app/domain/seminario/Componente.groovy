@@ -1,21 +1,18 @@
 package seminario
 
-class Componente {
+abstract class Componente {
 
-	String nombre
-	String marca
-	String origen
-	String especificaciones// detalle particular
+	String modelo
+	String conector
+	String capacidad
+	String velocidad
+	String detalle
+	String tipo
 
     static constraints = {
     }
 
-    Componente(String nombre, String marca, String origen, String especificaciones){
-    
-		this.nombre = nombre
-		this.marca = marca
-		this.origen = origen
-		this.especificaciones = especificaciones
-		}
+   
+	abstract boolean Compatible (Mother mother)
 
 }
