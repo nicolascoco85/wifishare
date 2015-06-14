@@ -2,17 +2,20 @@ package seminario
 
 class Placa extends Componente{
 	
-	String extension_conector
-	String velocidad
-	String tipo_de_placa // video audio red ¿justifica otra herencia?
 	
     static constraints = {
     }
 
-    Placa (String ext_conector,String velocidad,String tipo_de_placa ){
+    Placa (String conector,String velocidad){
 
-    	this.extension_conector= ext_conector
+    	this.conector= conector
     	this.velocidad= velocidad
-    	this.tipo_de_placa = tipo_de_placa
+     }
+
+
+    boolean Compatible(Mother mother){
+    
+        if ((mother.extension_video==this.conector) || (mother.extension_audio==this.conector))
+            return TRUE
     }
 }
