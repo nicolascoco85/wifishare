@@ -2,20 +2,25 @@ package seminario
 
 class Procesador extends Componente{
 
-	String velocidad
 	String arquitectura // 32-64 bit
-	String tipo // dual core- celeron- sempron
-	String socket
-
+	TipoSocket socket
     static constraints = {
     }
 
-    Procesador (String velocidad,String arquitectura,String tipo,String socket){
+    Procesador (String arquitectura, TipoSocket socket){
 
-    	this.velocidad= velocidad
-    	this.arquitectura= arquitectura
-    	this.tipo= tipo
-    	this.socket = socket
+    	   	this.arquitectura= arquitectura
+            this.socket = socket
+    	    
+    }
+
+    boolean Compatible(Mother mother){
     
+        return mother.tieneSocket(tipoSocket)
+    }
+
+    void agregarseA(Mother mother) {
+        this.mother.agregarProcesador(this)
+
     }
 }

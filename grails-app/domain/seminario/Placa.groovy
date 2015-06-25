@@ -1,21 +1,21 @@
 package seminario
 
 class Placa extends Componente{
+
+    TipoConector conector
 	
 	
     static constraints = {
     }
 
-    Placa (String conector,String velocidad){
+    Placa (TipoConector conector){
+        this.conector = conector
 
-    	this.conector= conector
-    	this.velocidad= velocidad
-     }
+      }
 
 
-    boolean Compatible(Mother mother){
-    
-        if ((mother.extension_video==this.conector) || (mother.extension_audio==this.conector))
-            return TRUE
+     boolean esCompatibleCon (Mother mother){
+
+        return mother.tieneConector(this.conector)
     }
 }

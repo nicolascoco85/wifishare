@@ -2,9 +2,8 @@ package seminario
 
 abstract class Componente {
 
-	String modelo
-	String conector
-	String capacidad
+	
+	//String conector
 	String velocidad
 	String detalle
 	String tipo
@@ -13,6 +12,6 @@ abstract class Componente {
     }
 
    
-	abstract boolean Compatible (Mother mother)
+	abstract boolean esCompatibleCon (Mother mother)// renombrar metodo esCompatibleCon
 
 }

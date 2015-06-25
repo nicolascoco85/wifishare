@@ -2,15 +2,14 @@ package seminario
 
 class Memoria extends Componente{
 
+    String capacidad
 	
     static constraints = {
     }
 
-    Memoria (String capacidad, 	String velocidad, String conector ){
+    Memoria (String capacidad){
 
     	this.capacidad= capacidad
-    	this.velocidad= velocidad
-    	this.conector= conector
     }
 
 
